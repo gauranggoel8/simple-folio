@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurang Goel | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F7F7F7;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #FF385C 0%, #BD1E59 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white shadow-md z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-[#FF385C]">
+                Gaurang Goel
+            </div>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-800 hover:text-[#FF385C] transition">About</a>
+                <a href="#education" class="text-gray-800 hover:text-[#FF385C] transition">Education</a>
+                <a href="#contact" class="bg-[#FF385C] text-white px-4 py-2 rounded-full hover:bg-opacity-90 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-24 pb-16 gradient-bg text-white">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <img 
+                src="/api/placeholder/200/200" 
+                alt="" 
+                class="mx-auto mb-6 rounded-full border-4 border-white shadow-lg"
+            />
+            <h1 class="text-4xl font-bold mb-4">Gaurang Goel</h1>
+            <p class="text-xl opacity-90">BTech Student | Computer and Communication Engineering</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-[#FF385C]">Personal Details</h3>
+                    <div class="space-y-3">
+                        <p><strong>Location:</strong> Jaipur, Rajasthan, India</p>
+                        <p><strong>Phone:</strong> 9259415570</p>
+                        <p><strong>Email:</strong> gauranggoelsweta@gmail.com</p>
+                        <a 
+                            href="https://www.linkedin.com/in/gaurang-goel-8036b2230" 
+                            target="_blank" 
+                            class="text-[#FF385C] hover:underline flex items-center"
+                        >
+                            LinkedIn Profile
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-[#FF385C]">Skills & Interests</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-[#FF385C] text-white px-3 py-1 rounded-full text-sm">Web Dev</span>
+                        <span class="bg-[#FF385C] text-white px-3 py-1 rounded-full text-sm">Communication Technology</span>
+                        <span class="bg-[#FF385C] text-white px-3 py-1 rounded-full text-sm">Problem Solving</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Education</h2>
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold text-[#FF385C]">Manipal University Jaipur</h3>
+                    <p class="text-gray-700">Bachelor of Technology - BTech</p>
+                    <p class="text-gray-600">Computer and Communication Engineering</p>
+                    <p class="text-sm text-gray-500 mt-2">September 2024 - September 2028</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+                    <h3 class="text-xl font-semibold text-[#FF385C]">Sacred Heart Convent School</h3>
+                    <p class="text-gray-700">Secondary Education</p>
+                    <p class="text-sm text-gray-500">2021 - 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 gradient-bg">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-white">Contact Me</h2>
+            <form 
+                action="https://formspree.io/f/xqakypqv" 
+                method="POST" 
+                class="bg-white p-8 rounded-xl shadow-lg space-y-6"
+            >
+                <div>
+                    <label class="block mb-2 text-gray-700" for="name">Name</label>
+                    <input 
+                        type="text" 
+                        id="name"
+                        name="name" 
+                        required 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF385C] focus:outline-none"
+                    />
+                </div>
+                <div>
+                    <label class="block mb-2 text-gray-700" for="email">Email</label>
+                    <input 
+                        type="email" 
+                        id="email"
+                        name="email" 
+                        required 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF385C] focus:outline-none"
+                    />
+                </div>
+                <div>
+                    <label class="block mb-2 text-gray-700" for="message">Message</label>
+                    <textarea 
+                        id="message"
+                        name="message" 
+                        required 
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#FF385C] focus:outline-none"
+                        rows="4"
+                    ></textarea>
+                </div>
+                <button 
+                    type="submit" 
+                    class="w-full bg-[#FF385C] text-white py-4 rounded-lg hover:bg-opacity-90 transition text-lg font-semibold"
+                >
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Gaurang Goel. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
